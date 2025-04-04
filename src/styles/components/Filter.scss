@@ -1,0 +1,116 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .filter-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #aaaaaa;
+        }
+
+        .ant-slider-track {
+            background-color: #6157ff !important;
+        }
+
+        .ant-slider-handle {
+            border-color: #6157ff !important;
+            background-color: #6157ff !important;
+        }
+
+        .ant-input-prefix {
+            color: #aaaaaa;
+        }
+
+        .ant-btn-primary {
+            background-color: #6157ff;
+            border-color: #6157ff;
+            width: 100%;
+            height: 40px;
+
+            &:hover {
+                background-color: #7a71ff;
+                border-color: #7a71ff;
+            }
+        }
+
+        .search-input {
+            border-radius: 8px;
+        }
+
+        .filter-select {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    .ant-slider {
+        margin: 10px 0;
+    }
+
+    .ant-slider-tooltip {
+        min-width: 40px;
+    }
+}
+
+.time-filter {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    .date-range-picker {
+        min-width: 230px;
+    }
+}
+
+.custom-date-option {
+    padding: 8px;
+
+    .ant-picker-range {
+        width: 100%;
+    }
+}
+
+.ant-select-item-option-content {
+    white-space: normal !important;
+}
+
+.time-dropdown-button {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid currentColor;
+    }
+}
+
+.ant-dropdown {
+    .ant-picker-range {
+        width: 280px;
+    }
+}
+
+.custom-date-menu {
+    .custom-date-title {
+        margin-bottom: 8px;
+        color: #aaaaaa;
+    }
+
+    .ant-picker {
+        width: 100%;
+    }
+}
